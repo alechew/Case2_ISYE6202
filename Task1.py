@@ -153,7 +153,7 @@ for x in range(years):
         j = firstDay
         totalIterations = firstDay + rangeOfDaysInMonth
 
-        while j <= totalIterations:
+        while j < totalIterations:
             dayOfWeek = j % 7
 
             raw = generate_raw(dayOfWeek)
