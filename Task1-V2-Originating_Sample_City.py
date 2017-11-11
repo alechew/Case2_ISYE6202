@@ -110,8 +110,6 @@ while count <= years:
 
 # here we calculate the daily demand
 for x in range(years):
-    if x > 0:
-        eachYearDailyDemandList.append(dailyDemandList)
 
     dailyDemandList = []
     for i in range(months):
@@ -136,7 +134,7 @@ for x in range(years):
                                               , singleDayDemand, x, i, dayOfWeek)
             dailyDemandList.append(dailyDemand)
             j = j + 1
-
+    eachYearDailyDemandList.append(dailyDemandList)
 
 
 # outputs in console the daily demand generated for each year
