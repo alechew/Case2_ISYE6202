@@ -59,7 +59,7 @@ eachYearDailyDemandList = []
 def write_to_file():
     """writes on a CSV value the randomly generated daily demands from year 2018 to 2023
     """
-    ofile = open(filename + "_Generated-Random-Demand-Originating Sample City.csv", "wb")
+    ofile = open(filename + "Originating_Sample_City.csv", "wb")
 
     # writing the title of the columns
     row = "Year,Month,Day,Demand\n"
