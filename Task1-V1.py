@@ -5,7 +5,7 @@ import statistics
 
 filename = ""
 
-yearName = ["2018-1", "2018-2", "2018-3", "2018-3", "2018-4", "2018-5"]
+yearName = ["2018-1", "2018-2", "2018-3", "2018-4", "2018-5"]
 dayName = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
 factorySpecifications = Classes.FactorySpecificationsTask2
@@ -17,7 +17,7 @@ yearlyStandardDeviation = []    # this can be said is the standardDeviation of e
 dailyCapacityRequirements = []
 
 totalDaysInYear = 365
-years = 6
+years = 5
 months = 12
 days = 7
 
@@ -64,7 +64,7 @@ def write_to_file():
     for j in range(0, len(eachYearDailyDemandList),1):
         theYearDemand = eachYearDailyDemandList[j]
 
-        for i in range(0, len(dailyDemandList), 1):
+        for i in range(0, len(theYearDemand), 1):
             day = theYearDemand[i]
             if isinstance(day, Classes.DailyDemand):
                 row = day.year + "," + day.week + "," + day.day + "," + str(day.dailyDemand) + "\n"
